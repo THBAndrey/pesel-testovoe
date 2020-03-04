@@ -3,9 +3,7 @@
     class="breed-card"
     :class="size"
     :style="
-      `background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%), url(${image});
-    background-position: center, center;
-    background-size: cover, cover`
+      `background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%), url(${image})`
     "
   >
     <button
@@ -73,6 +71,8 @@ export default {
   height: 290px;
   border-radius: 8px;
   overflow: hidden;
+  background-position: center, center;
+  background-size: cover, cover;
 
   .like-button {
     position: absolute;

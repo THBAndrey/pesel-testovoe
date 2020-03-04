@@ -24,7 +24,14 @@ const mutations = {
 
 const actions = {
   loadFavorites({ commit }) {
-    commit('initFavorites', JSON.parse(localStorage.getItem('favorites')))
+    commit(
+      'initFavorites',
+      JSON.parse(
+        localStorage.getItem('favorites')
+          ? localStorage.getItem('favorites')
+          : []
+      )
+    )
   }
 }
 
