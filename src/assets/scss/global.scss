@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  background-color: #1b1a1f;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding: 15px;
+  width: 100%;
+
+  &-3 {
+    padding: 15px;
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+.load {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 65px 0;
+}
